@@ -1,53 +1,348 @@
 @import "style.css";
+/* Mobile settings */
 
+/* Presentation block */
 
-.we-got-you-covered-block {
-  height: 100%;
-  width: 100%;
-}
-
-.we-got-you-covered-block .block-1 {
-  position: relative;
-  justify-content: flex-start;
-  align-items: flex-start;
-  z-index: 2;
+.presentation-block .block-1 {
+  height: calc(100vh - 0.0625rem);
   background: var(--soft-sky-blue);
+  position: relative;
+  z-index: 3;
 }
 
-.we-got-you-covered-block .block-1:before {
-  content: '';
-  position: absolute;
-  background: url('../img/image.svg') no-repeat center/cover;
-  width: 100%;
-  max-width: var(--max-width-image);
-  height: 50%;
-  bottom: -0.6rem;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: -1;
+.presentation-block .block-2 {
+  background: var(--orange);
 }
 
-.we-got-you-covered-block .block-2, 
-.we-got-you-covered-block .block-3 {
+.presentation-block .block-3 {
+  background: var(--yellow);
+}
+
+.presentation-block .block-2, .presentation-block .block-3 {
   justify-content: center;
   align-items: center;
 }
 
-.we-got-you-covered-block .block-2 {
-  background: var(--orange);
+.presentation-block .block {
+  padding: 5rem;
 }
 
-.we-got-you-covered-block .block-3 {
-  background: var(--yellow);
+.presentation-block .block-top, .presentation-block .block-middle, .presentation-block .block-bottom {
+  margin-bottom: 2rem;
 }
 
+.presentation-block .block-1 .image-block {
+  height: 100%;
+  width: 100%;
+  max-height: 29.4375rem;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  z-index: -1;
+}
 
-.we-got-you-covered-block .block-bottom {
+.presentation-block .block-1 .image-block img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Navigation block (hidden in mobile view) */
+
+.navigation-block {
+  display: none;
+}
+
+.navigation-block .main-navigation .navigation {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.navigation-block .main-navigation .navigation .nav-item {
+  justify-self: center;
+  align-self: center;
+}
+
+/* Financial block*/
+
+.financial-safety-block {
+  padding: 1rem;
+  background: var(--safety-color);
+}
+
+.financial-safety-block a {
+  display: none;
+}
+
+.financial-safety-block .card {
+  width: 19.375rem;
+  margin: 0 auto 4rem auto;
+  background: var(--white-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 0.4rem;
+}
+
+.financial-safety-block .card-top {
+  margin-top: 2rem;
+  background: var(--soft-sky-blue);
+  position: relative;
+  border-radius: 0.3rem;
+  top: -3.125rem;
+}
+
+.financial-safety-block .block-middle {
+  margin-bottom: 4rem;
+}
+
+.financial-safety-block .block-bottom, .financial-safety-block .block-top {
+  margin-bottom: 2rem;
+}
+
+.financial-safety-block .block-bottom {
   margin-top: 2rem;
 }
 
-.safety-net-online-block {
+.financial-safety-block .card-middle {
+  margin-top: -1.875rem;
+  margin-bottom: 1rem;
+}
+
+.financial-safety-block .card-bottom {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.financial-safety-block .card-2 .card-top {
+  background: var(--yellow);
+}
+
+.financial-safety-block .card-2 .card-top {
+  background: var(--orange);
+}
+
+/* About us block */
+.about-block {
+  background: var(--yellow);
+}
+
+.about-block .block {
+  justify-content: center;
+  align-items: center;
+}
+
+.about-block .block-top, .about-block .block-middle {
+  margin-top: 2rem;
+}
+
+.about-block .block-middle {
+  text-align: center;
+  padding: 0 5rem 5rem;
+  margin-bottom: 2rem;
+}
+
+.about-block .block-middle .block-text:nth-child(even) {
+  padding-top: 1rem;
+}
+
+/*How we work block*/
+.instruction-block {
   height: 100%;
+}
+
+.instruction-block .block .block-top {
+  background: var(--soft-sky-blue);
+  padding: 3.5rem 0;
+}
+
+.instruction-block .block .block-top,
+.instruction-block .block .block-middle {
   width: 100%;
-  background: var(--safety-color)
+  justify-self: center;
+  align-self: center;
+}
+
+.instruction-block .block span {
+  display: block;
+}
+
+.instruction-block .block span,
+.instruction-block .block .block-title,
+.instruction-block .block .block-text {
+  text-align: center;
+}
+
+.instruction-block .block span.block-number {
+  text-align: left;
+  padding: 1rem;
+}
+
+.instruction-block .cards .block-text {
+  padding: 2rem 4rem 6rem;
+}
+
+.instruction-block .block .card-1,
+.instruction-block .block .card-3,
+.instruction-block .block .card-5 {
+  background: var(--white-text);
+}
+.instruction-block .block .card-2 {
+  background: var(--safety-color);
+}
+
+.instruction-block .block .card-4 {
+  background: var(--orange);
+}
+
+.instruction-block .block .block-bottom *{
+  visibility: hidden;
+}
+
+.instruction-block .block .block-bottom {
+  background: var(--light-grey);
+  height: 100vh;
+  max-height: 13.625rem;
+}
+
+
+
+/* Responsive part */
+
+@media(min-width: 920px) {
+  .presentation-block .block {
+    padding: 1rem;
+  }
+
+  .presentation-block .block-1 {
+    height: calc(100vh - 0.0625rem);
+  }
+
+  .presentation-block .block .block-bottom {
+    margin-bottom: 5rem;
+  }
+  .presentation-block .block-1 {
+    grid-row: 1/3;
+  }
+  .presentation-block .block-1 .image-block {
+    max-height: 37.5rem;
+  }
+  .presentation-block .block-2, .presentation-block .block-3 {
+    grid-column: 2/3;
+  }
+
+  /* Navigation bar*/
+
+  .navigation-block {
+    display: grid;
+  }
+
+  .navigation-block .navigation {
+    padding: 2.5rem 10rem;
+  }
+
+  .navigation-block .nav-item a{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--black-text);
+    opacity: 0.4;
+  }
+
+.navigation-block .nav-item a:hover,
+.navigation-block .nav-item a:focus {
+  opacity: 1;
+  transition: opacity 200ms ease-in-out;
+}
+
+/* financial-safety block */
+
+.financial-safety-block .block-bottom,
+.financial-safety-block .block-middle,
+.financial-safety-block .block-top {
+  text-align: center;
+}
+
+.financial-safety-block .block-bottom {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.financial-safety-block .card {
+  width: 15.375rem;
+}
+
+.financial-safety-block .card-top {
+  width: 88%;
+}
+
+.financial-safety-block .card-top picture {
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding-top: 1.5625rem;
+}
+
+.financial-safety-block .card-top img {
+  width: 100%;
+}
+
+.financial-safety-block .card-bottom {
+  padding: 0.625rem;
+}
+
+@media(min-width: 1024px){
+  .presentation-block .block {
+    padding: 5rem;
+  }
+
+  .financial-safety-block .block-middle .block-text {
+    margin: 0 auto;
+    width: 60%;
+  }
+
+  .financial-safety-block .block-bottom {
+    position: relative;
+    z-index: 3;
+  }
+
+/*   .about-block {
+    position: relative;
+    z-index: 1;
+    top: -17rem;
+    padding: 15rem 0 10rem;
+  } */
+}
+
+
+
+@media(min-width: 1366px){
+  .presentation-block .block {
+    padding: 10rem;
+  }
+}
+
+
+@media(min-width: 1920px) {
+ 
+  .presentation-block .block {
+    padding: 10rem 14rem;
+  }
+   /*
+   .presentation-block .block .block-top, .presentation-block .block .block-middle {
+    margin-bottom: 2rem;
+  }
+  .presentation-block .block .block-bottom {
+    margin-bottom: 5rem;
+  }
+  .presentation-block .block-1 {
+    grid-row: 1/3;
+  }
+  .presentation-block .block-1 .image-block {
+    max-height: 37.5rem;
+  }
+  .presentation-block .block-2, .presentation-block .block-3 {
+    grid-column: 2/3;
+  } */
 }

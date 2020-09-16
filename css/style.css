@@ -23,6 +23,7 @@ html {
   --grey: rgba(0, 0, 0, 0.4);
   --dark-grey: rgba(0, 0, 0, 0.7);
   --light-grey: #777574;
+  --lighter-grey: #A9A19E;
 }
 
 body {
@@ -103,29 +104,36 @@ body {
 }
 
 .btn {
-  display: flex;
+ 
   justify-content: center;
   align-items: center;
   border-radius: 1rem;
   width: 6.3125rem;
   height: 1.875rem;
-  font-family: 'Fira Sans', sans-serif;
   font-weight: bold;
   text-decoration: none;
   font-size: 0.6875rem;
   text-transform: uppercase;
   line-height: 1;
   border-bottom: 0.05rem solid var(--sky-blue);
+  padding: 1rem;
 }
 
 .btn.btn-white {
   color: var(--dark-text);
   background: var(--white-text);
+  justify-self: center;
 }
 
 a {
+  font-family: 'Fira Sans', sans-serif;
   color: var(--white-text);
   text-decoration: none;
+}
+
+a.back-up {
+  font-size: 1.0625rem;
+  font-weight: 500;
 }
 
 .grid {

@@ -1,0 +1,53 @@
+@import "style.css";
+
+
+.we-got-you-covered-block {
+  height: 100%;
+  width: 100%;
+}
+
+.we-got-you-covered-block .block-1 {
+  position: relative;
+  justify-content: flex-start;
+  align-items: flex-start;
+  z-index: 2;
+  background: var(--soft-sky-blue);
+}
+
+.we-got-you-covered-block .block-1:before {
+  content: '';
+  position: absolute;
+  background: url('../img/image.svg') no-repeat center/cover;
+  width: 100%;
+  max-width: var(--max-width-image);
+  height: 50%;
+  bottom: -0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.we-got-you-covered-block .block-2, 
+.we-got-you-covered-block .block-3 {
+  justify-content: center;
+  align-items: center;
+}
+
+.we-got-you-covered-block .block-2 {
+  background: var(--orange);
+}
+
+.we-got-you-covered-block .block-3 {
+  background: var(--yellow);
+}
+
+
+.we-got-you-covered-block .block-bottom {
+  margin-top: 2rem;
+}
+
+.safety-net-online-block {
+  height: 100%;
+  width: 100%;
+  background: var(--safety-color)
+}

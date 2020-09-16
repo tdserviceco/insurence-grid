@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;500;900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white-text: #fff;
+  --dark-text: #000;
+  --sky-blue: rgba(135, 207, 235, 0.925);
+  --safety-color: #A9A19E;
+  --max-width-image: 30.1875rem;
+  --soft-sky-blue: #C7DDEA;
+  --default-background: #E5E5E5;
+  --orange: #F17949;
+  --yellow: #FAB131;
+}
+
+body {
+  background: var(--default-background);
+  font-family: 'Frank Ruhl Libre', serif;
+}
+
+/* Mobile first */
+
+main {
+  height: 100vh;
+  width: 100%;
+}
+
+
+.block {
+  display: flex;
+  flex-direction: column;
+  padding: 6rem;
+  width: 100%;
+  height:  100%;
+  color: #000000;
+}
+
+.block-title.large {
+  font-size: 2.8125rem;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.block-title.medium {
+  font-size: 2.5625rem;
+  font-weight: 900;
+}
+
+.block-title.small {
+  font-family: 'Fira Sans', sans-serif;
+  font-size: 0.6875rem;
+  font-weight: 500;
+}
+
+.block-text {
+  font-size: 0.875rem;
+}
+
+
+.white-text {
+  color: var(--white-text);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  width: 6.3125rem;
+  height: 1.875rem;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  line-height: 1;
+  border-bottom: 0.05rem solid var(--sky-blue);
+}
+
+.btn.btn-white {
+  color: var(--dark-text);
+  background: var(--white-text);
+}
+
+a {
+  color: var(--white-text);
+  text-decoration: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+}

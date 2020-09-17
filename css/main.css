@@ -205,12 +205,6 @@
 
 /* Responsive part */
 
-@media only screen and (min-width: 820px) and (max-width:919px) {
-  .financial-safety-block .block {
-    padding: 0 0 20rem;
-  }
-}
-
 @media only screen and (min-width: 920px) {
   .presentation-block .block {
     padding: 1rem;
@@ -291,7 +285,7 @@
   }
   .financial-safety-block .block {
     grid-template-columns: 50% 50%;
-    padding: 0 5rem 20rem;
+    padding: 0 0 20rem;
   }
   .financial-safety-block .block-middle .block-text {
     margin: 0 auto;
@@ -372,16 +366,14 @@
 }
 
 @media only screen and (min-width: 1361px) {
+  .financial-safety-block .block {
+    padding: 0 10rem 20rem;
+  }
   .instruction-block .block .cards {
     grid-template-columns: repeat(auto-fill, minmax(28.0625rem, 1fr));
   }
 }
 
-@media only screen and (min-width: 1366px) {
-  .presentation-block .block {
-    padding: 10rem;
-  }
-}
 
 @media only screen and (min-width: 1920px) {
   .presentation-block .block {

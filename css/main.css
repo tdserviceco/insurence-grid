@@ -31,10 +31,8 @@
   margin-bottom: 2rem;
 }
 
-.presentation-block .block-1 .image-block {
-  height: 100%;
+.presentation-block .block-1 .block-image {
   width: 100%;
-  max-height: 29.4375rem;
   position: absolute;
   top: 100%;
   left: 50%;
@@ -42,7 +40,7 @@
   z-index: -1;
 }
 
-.presentation-block .block-1 .image-block img {
+.presentation-block .block-1 .block-image img {
   width: 100%;
   height: 100%;
 }
@@ -203,14 +201,74 @@
   max-height: 13.625rem;
 }
 
+/* Contact.html part */
+
+.hero-block {
+  background: var(--soft-sky-blue);
+  padding-top: 2rem;
+  grid-template-columns: 66% 34%;
+}
+
+.hero-block .block {
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-block .block-bottom {
+  padding-left: 5rem;
+}
+
+.hero-block .block .block-title {
+  justify-self: center;
+  align-self: flex-end;
+}
+
+.hero-block .block .block-image {
+  justify-self: center;
+  align-self: flex-start;
+}
+
 /* Responsive part */
+
+@media only screen and (min-width: 280px) {
+  .presentation-block .block-2 .block-middle, .presentation-block .block-3 .block-middle, .presentation-block .block-2 .block-bottom, .presentation-block .block-3 .block-bottom {
+    text-align: center;
+  }
+  .presentation-block .block-1 .block-image {
+    height: 13.4375rem;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .presentation-block .block-1 .block-image {
+    height: 8.4375rem;
+  }
+  .financial-safety-block .card {
+    width: 17.375rem;
+  }
+  .financial-safety-block .card .card-top {
+    width: 16.25rem;
+  }
+  .financial-safety-block .card .card-top img {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 375px) {
+  .presentation-block .block-1 .block-image {
+    height: 15.4375rem;
+  }
+}
+
+@media only screen and (min-width: 411px) {
+  .presentation-block .block-1 .block-image {
+    height: 20.4375rem;
+  }
+}
 
 @media only screen and (min-width: 920px) {
   .presentation-block .block {
-    padding: 1rem;
-  }
-  .presentation-block .block-1 {
-    height: calc(100vh - 0.0625rem);
+    padding: 5rem;
   }
   .presentation-block .block .block-bottom {
     margin-bottom: 5rem;
@@ -218,8 +276,8 @@
   .presentation-block .block-1 {
     grid-row: 1/3;
   }
-  .presentation-block .block-1 .image-block {
-    max-height: 37.5rem;
+  .presentation-block .block-1 .block-image {
+    height: 32rem;
   }
   .presentation-block .block-2, .presentation-block .block-3 {
     grid-column: 2/3;
@@ -227,9 +285,7 @@
   .presentation-block a {
     display: flex;
   }
-
   /* financial-safety block */
-   
   .financial-safety-block .block-bottom, .financial-safety-block .block-middle, .financial-safety-block .block-top {
     text-align: center;
   }
@@ -286,6 +342,9 @@
   .financial-safety-block .block {
     grid-template-columns: 50% 50%;
     padding: 0 0 20rem;
+  }
+  .financial-safety-block .card {
+    width: 19.375rem;
   }
   .financial-safety-block .block-middle .block-text {
     margin: 0 auto;
@@ -374,9 +433,24 @@
   }
 }
 
+@media only screen and (min-width: 1440px) {
+  .presentation-block .block {
+    padding: 0 9rem;
+  }
+  .presentation-block .block-1 {
+    padding-top: 9rem;
+  }
+
+  .financial-safety-block .card {
+    width: 22.375rem;
+  }
+}
 
 @media only screen and (min-width: 1920px) {
   .presentation-block .block {
     padding: 10rem 14rem;
+  }
+  .presentation-block .block-1 .block-image {
+    height: 30.4375rem;
   }
 }

@@ -138,6 +138,10 @@ a.back-up {
   font-weight: 500;
 }
 
+a.active {
+  color: var(--dark-text);
+}
+
 .grid {
   display: grid;
 }

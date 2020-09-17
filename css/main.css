@@ -205,7 +205,13 @@
 
 /* Responsive part */
 
-@media(min-width: 920px) {
+@media only screen and (min-width: 820px) and (max-width:919px) {
+  .financial-safety-block .block {
+    padding: 0 0 20rem;
+  }
+}
+
+@media only screen and (min-width: 920px) {
   .presentation-block .block {
     padding: 1rem;
   }
@@ -227,7 +233,9 @@
   .presentation-block a {
     display: flex;
   }
+
   /* financial-safety block */
+   
   .financial-safety-block .block-bottom, .financial-safety-block .block-middle, .financial-safety-block .block-top {
     text-align: center;
   }
@@ -254,124 +262,129 @@
   .financial-safety-block .card-bottom {
     padding: 0.625rem;
   }
-  @media(min-width: 1024px) {
-    .presentation-block .block {
-      padding: 5rem;
-    }
-    /* Navigation bar*/
-    .navigation-block {
-      display: grid;
-    }
-    .navigation-block .navigation {
-      padding: 2.5rem 10rem;
-    }
-    .navigation-block .nav-item a {
-      font-family: 'Fira Sans', sans-serif;
-      font-size: 0.75rem;
-      font-weight: 600;
-      color: var(--black-text);
-      opacity: 0.4;
-    }
-    .navigation-block .nav-item a:hover, .navigation-block .nav-item a:focus {
-      opacity: 1;
-      transition: opacity 200ms ease-in-out;
-    }
-    .financial-safety-block {
-      position: relative;
-    }
-    .financial-safety-block .block {
-      grid-template-columns: 50% 50%;
-      padding: 0 5rem 20rem;
-    }
-    .financial-safety-block .block-middle .block-text {
-      margin: 0 auto;
-      width: 60%;
-    }
-    .financial-safety-block a {
-      margin-top: 4rem;
-      display: flex;
-    }
-    .financial-safety-block .block-top {
-      padding-top: 4rem;
-      width: 31.25rem;
-    }
-    .financial-safety-block .block-middle {
-      padding-top: 4rem;
-      padding-bottom: 4rem;
-    }
-    .financial-safety-block .block-middle .block-text {
-      line-height: 2;
-    }
-    .financial-safety-block .block-bottom, .financial-safety-block .block-middle, .financial-safety-block .block-top {
-      text-align: left;
-    }
-    .financial-safety-block .block-middle .block-text {
-      width: auto;
-      margin: 0;
-    }
-    .financial-safety-block .block-bottom {
-      position: absolute;
-      top: 100%;
-      left: 50%;
-      transform: translate(-50%, -60%);
-      width: 100%;
-    }
-    .about-block {
-      padding-top: 15rem;
-      padding-bottom: 10rem;
-    }
-    .about-block .block-middle {
-      width: 31.25rem;
-      min-width: 50%;
-    }
-    .instruction-block .block .block-top {
-      padding: 0;
-    }
-    .instruction-block .block .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(21.0625rem, 1fr));
-    }
-    .instruction-block .block .card {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-    }
-    .instruction-block .block .card-0 {
-      padding: 0;
-    }
-    .instruction-block .block .block-bottom * {
-      align-self: center;
-      visibility: visible;
-    }
-    .instruction-block .block .block-button-top {
-      font-size: 1.875rem;
-      margin-bottom: -0.7rem;
-    }
-    .instruction-block .block .block-button-bottom {
-      margin-bottom: 1rem;
-    }
-    .instruction-block .block .block-button-desktop {
-      background: var(--lighter-grey);
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-content: center;
-    }
+}
+
+@media only screen and (min-width: 1024px) {
+  .presentation-block .block {
+    padding: 5rem;
   }
-  @media(min-width: 1361px) {
-    .instruction-block .block .cards {
-      grid-template-columns: repeat(auto-fill, minmax(28.0625rem, 1fr));
-    }
+  /* Navigation bar*/
+  .navigation-block {
+    display: grid;
   }
-  @media(min-width: 1366px) {
-    .presentation-block .block {
-      padding: 10rem;
-    }
+  .navigation-block .navigation {
+    padding: 2.5rem 10rem;
   }
-  @media(min-width: 1920px) {
-    .presentation-block .block {
-      padding: 10rem 14rem;
-    }
+  .navigation-block .nav-item a {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--black-text);
+    opacity: 0.4;
   }
+  .navigation-block .nav-item a:hover, .navigation-block .nav-item a:focus {
+    opacity: 1;
+    transition: opacity var(--animation-speed) ease-in-out;
+  }
+  .financial-safety-block {
+    position: relative;
+  }
+  .financial-safety-block .block {
+    grid-template-columns: 50% 50%;
+    padding: 0 5rem 20rem;
+  }
+  .financial-safety-block .block-middle .block-text {
+    margin: 0 auto;
+    width: 60%;
+  }
+  .financial-safety-block a {
+    margin-top: 4rem;
+    display: flex;
+  }
+  .financial-safety-block .block-top {
+    padding-top: 4rem;
+    width: 31.25rem;
+  }
+  .financial-safety-block .block-middle {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+  .financial-safety-block .block-middle .block-text {
+    line-height: 2;
+  }
+  .financial-safety-block .block-bottom, .financial-safety-block .block-middle, .financial-safety-block .block-top {
+    text-align: left;
+  }
+  .financial-safety-block .block-middle .block-text {
+    width: auto;
+    margin: 0;
+  }
+  .financial-safety-block .block-bottom {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+    width: 100%;
+  }
+  .about-block {
+    padding-top: 15rem;
+    padding-bottom: 10rem;
+  }
+  .about-block .block-middle {
+    width: 31.25rem;
+    min-width: 50%;
+  }
+  .instruction-block .block .block-top {
+    padding: 0;
+  }
+  .instruction-block .block .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(21.0625rem, 1fr));
+  }
+  .instruction-block .block .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+  .instruction-block .block .card-0 {
+    padding: 0;
+  }
+  .instruction-block .block .block-bottom * {
+    align-self: center;
+    visibility: visible;
+  }
+  .instruction-block .block .block-button-top {
+    font-size: 1.875rem;
+    margin-bottom: -0.7rem;
+  }
+  .instruction-block .block .block-button-bottom {
+    margin-bottom: 1rem;
+  }
+  .instruction-block .block .block-button-desktop {
+    background: var(--lighter-grey);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+}
+
+@media only screen and (min-width: 1361px) {
+  .instruction-block .block .cards {
+    grid-template-columns: repeat(auto-fill, minmax(28.0625rem, 1fr));
+  }
+}
+
+@media only screen and (min-width: 1366px) {
+  .presentation-block .block {
+    padding: 10rem;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .presentation-block .block {
+    padding: 10rem 14rem;
+  }
+}

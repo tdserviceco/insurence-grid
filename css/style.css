@@ -24,6 +24,8 @@ html {
   --dark-grey: rgba(0, 0, 0, 0.7);
   --light-grey: #777574;
   --lighter-grey: #A9A19E;
+  --animation-speed: 200ms;
+  
 }
 
 body {

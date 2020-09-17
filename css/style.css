@@ -6,9 +6,6 @@
   box-sizing: border-box;
 }
 
-html {
-  height: -webkit-fill-available;
-}
 
 :root {
   --white-text: #fff;
@@ -138,8 +135,8 @@ a.back-up {
   font-weight: 500;
 }
 
-a.active {
-  color: var(--dark-text);
+.navigation-block .nav-item a.active {
+  opacity: 1;
 }
 
 .grid {
@@ -161,10 +158,4 @@ a.active {
 ul,
 li {
   list-style: none;
-}
-
-@media(min-width: 1920px) {
-  .grid-3-special {
-    grid-template-columns: 50%;
-  }
 }
